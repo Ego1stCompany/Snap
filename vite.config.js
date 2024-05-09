@@ -1,10 +1,12 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import {ViteImageOptimizer} from "vite-plugin-image-optimizer";
+import svgr from 'vite-plugin-svgr'
 
 export default defineConfig({
-  base:"/Cootels",
+  base:"/Snap",
   plugins: [react(),
+    svgr(),
     ViteImageOptimizer({
       test: /\.(jpe?g|png|gif|tiff|webp|svg|avif)$/i,
       exclude: undefined,

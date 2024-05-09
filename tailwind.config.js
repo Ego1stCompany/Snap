@@ -1,9 +1,21 @@
-module.exports = {
+/** @type {import('tailwindcss').Config} */
+export default {
   content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    screens:{
+      'xl':'1440px',
+      'md':'1024px'
+    },
+    extend: {
+      colors:{
+        'almost-white':'hsl(0, 0%, 98%)',
+        'medium-gray':'hsl(0, 0%, 41%)',
+        'almost-black':'hsl(0, 0%, 8%)',
+      }
+    },
   },
   plugins: [],
 }
