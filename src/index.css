@@ -26,6 +26,7 @@ time, mark, audio, video {
     font-family: 'Epilogue';
     vertical-align: baseline;
     box-sizing: border-box;
+    background: hsla(0, 0%, 98%);
 }
 
 /* HTML5 display-role reset for older browsers */
